@@ -85,7 +85,6 @@ class Board:
         return len(self.getValidColumns(board)) == 0
 
     def printBoard(self, board):
-        # TIP: print column numbers on top so human knows which col to pick (1-indexed)
         print("  " + "   ".join(str(i + 1) for i in range(self.cols)))
         print("+" + "---+" * self.cols)
         for row in board:
